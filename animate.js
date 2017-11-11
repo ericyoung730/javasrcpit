@@ -1,4 +1,4 @@
-var countdownnumber=3605;
+var countdownnumber=20;
 var countdownid,h,m,s,demo;
 
 function initial(){ 
@@ -22,6 +22,7 @@ function countdownfunc(){
    demo.innerHTML =  h + "h " + m + "m " + s + "s ";
   if (countdownnumber==0){
     alert("倒數結束");
+     myFunction();
     clearInterval(countdownid);
   }
   countdownnumber--;
